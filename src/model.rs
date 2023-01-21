@@ -165,7 +165,6 @@ impl<'de> Deserialize<'de> for SimpleFunctionPath {
 #[cfg(test)]
 mod tests {
     use crate::model::SimpleFunctionPath;
-    use crate::model::SimpleFunctionPath;
 
     #[test]
     fn can_deserialize() {
