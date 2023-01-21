@@ -6,13 +6,13 @@
 1. [Releases](https://github.com/KisaragiEffective/serverless-dts-generator/releases)からダウンロードします。
 2. 一番上にあるバージョンを見ます。
 3. `<プラットフォーム>`は以下のとおりです。
-  * Windows: x86_64-pc-windows-gnu
-  * Linux: unknown-linux-musl
-  * macOS: x86_64-apple-darwin
+    * Windows: x86_64-pc-windows-gnu
+    * Linux: unknown-linux-musl
+    * macOS: x86_64-apple-darwin
 4. `<拡張子>`は次のとおりです。
-  * Windows: `zip`
-  * Linux: `tar.gz`または`tar.xz`
-  * macOS: `zip`
+    * Windows: `zip`
+    * Linux: `tar.gz`または`tar.xz`
+    * macOS: `zip`
 5. `serverless-dts-generator_<バージョン>_<プラットフォーム>.<拡張子>`と`serverless-dts-generator_<バージョン>_<プラットフォーム>.<拡張子>.sha256sum`をダウンロードします。
 6. (推奨) [ハッシュ値を検証](#ハッシュ値の検証)します。
 7. `serverless-dts-generator_<バージョン>_<プラットフォーム>.<拡張子>`を展開します。
@@ -69,7 +69,8 @@ fi
 3. `Hash OK`と表示された場合、検証が完了しています。
 
 ## コマンドライン
-```
+
+```text
 serverless-dts-generator [serverless.ymlのパス]
 ```
 
@@ -77,7 +78,7 @@ serverless-dts-generator [serverless.ymlのパス]
 
 ## 注意点
 * `*.d.ts`は`serverless.yml`などのスキーマに設定されたパスに応じて生成される場所が変わります。具体的には、`handler`プロパティに設定されたパスと同じディレクトリに、ファイル名と同名の`.d.ts`が生成されます。
-    * 例：`handler`プロパティに`src/hoge/piyo.createPiyo`が設定されている場合、`createPiyo`という名前の`declare const`を生成し、`src/hoge/piyo.d.ts`にそれを書き込みます。
+  * 例：`handler`プロパティに`src/hoge/piyo.createPiyo`が設定されている場合、`createPiyo`という名前の`declare const`を生成し、`src/hoge/piyo.d.ts`にそれを書き込みます。
 * 今の所、基本的なHTTPリクエストに対するサポートしかありません。
   * その他の`event`がある場合は、ごく弱い型しかつきません。
 * 複数の`event`はサポートしていません。
