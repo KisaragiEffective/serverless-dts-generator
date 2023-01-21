@@ -78,6 +78,10 @@ serverless-dts-generator [serverless.ymlのパス]
 ## 注意点
 * `*.d.ts`は`serverless.yml`などのスキーマに設定されたパスに応じて生成される場所が変わります。具体的には、`handler`プロパティに設定されたパスと同じディレクトリに、ファイル名と同名の`.d.ts`が生成されます。
     * 例：`handler`プロパティに`src/hoge/piyo.createPiyo`が設定されている場合、`createPiyo`という名前の`declare const`を生成し、`src/hoge/piyo.d.ts`にそれを書き込みます。
+* 今の所、基本的なHTTPリクエストに対するサポートしかありません。
+  * その他の`event`がある場合は、ごく弱い型しかつきません。
+* 複数の`event`はサポートしていません。
+  * 最初の`event`だけが考慮され、他のイベントは暗黙に無視されます。
 
 ## ライセンス
 Apache License, Version 2.0とMITライセンスのデュアルライセンスです。どちらかのライセンスを選択することができます。
