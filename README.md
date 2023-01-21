@@ -1,5 +1,5 @@
 # serverless-dts-generator
-serverlessの`serverless.yml`から`*.d.ts`を生成するプログラムです。
+[serverless](https://www.npmjs.com/package/serverless)の[`serverless.yml`](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml)から[`*.d.ts`](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html)を生成するプログラムです。
 
 ## このアプリケーションの使い方
 ### ダウンロード
