@@ -8,7 +8,7 @@ repository = "https://github.com/KisaragiEffective/serverless-dts-generator"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1.0.69"
+anyhow = "1.0.70"
 clap = { version = "4.2.1", features = ["derive"] }
 serde = { version = "1.0.159", features = ["derive"] }
 serde_yaml = "0.9.19"
