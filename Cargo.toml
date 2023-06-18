@@ -12,4 +12,4 @@ anyhow = "1.0.70"
 clap = { version = "4.2.5", features = ["derive"] }
 serde = { version = "1.0.159", features = ["derive"] }
 serde_yaml = "0.9.21"
-strum = { version = "0.24.1", features = ["derive"] }
+strum = { version = "0.25.0", features = ["derive"] }
