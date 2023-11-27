@@ -10,6 +10,6 @@ repository = "https://github.com/KisaragiEffective/serverless-dts-generator"
 [dependencies]
 anyhow = "1.0.75"
 clap = { version = "4.4.9", features = ["derive"] }
-serde = { version = "1.0.192", features = ["derive"] }
+serde = { version = "1.0.193", features = ["derive"] }
 serde_yaml = "0.9.27"
 strum = { version = "0.25.0", features = ["derive"] }
